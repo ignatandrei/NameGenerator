@@ -30,5 +30,16 @@ jobs:
         cd NameGenerator
         dotnet tool restore
         dotnet r pack
-        
+
+    - name: 'Upload package'
+      if: startsWith(github.ref, 'refs/tags/v') # This line ensures the step runs only if a tag version is present
+      uses: actions/upload-artifact@v2
+      with:
+        name: data_${{github.run_number}}
+        path: src/NameGenerator/PACK/*symbols.nupkg
+        retention-days: 1        
     
+    - name: push nuget
+      if: startsWith(github.ref, 'refs/tags/v') # This line ensures the step runs only if a tag version is present
+      run: |
+          dotnet nuget push ${{github.workspace}}/src/NameGenerator/PACK/*symb*.*pkg --api-key  ${{ secrets.NUGETAPIKEY }} --source https://api.nuget.org/v3/index.json
