@@ -16,7 +16,7 @@
 
   <ItemGroup>
 	  <ProjectReference Include="..\NameGenerator\NameGenerator.csproj" >
-		  <OutputItemType>"Analyzer"</OutputItemType>
+		  <OutputItemType>Analyzer</OutputItemType>
 		  <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
 	  </ProjectReference>
   </ItemGroup>
