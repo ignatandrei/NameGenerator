@@ -11,7 +11,7 @@ Add to the .csproj file:
 ```xml
   <ItemGroup>
 	  <PackageReference Include="RSCG_NameGenerator" Version="2024.26.8.2002" >
-		  <OutputItemType>"Analyzer"</OutputItemType>
+		  <OutputItemType>Analyzer</OutputItemType>
 		  <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
 	  </PackageReference>
   </ItemGroup>
