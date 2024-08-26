@@ -1,6 +1,6 @@
 ﻿using Generated.TestNameGenerator;
 //by just putting here
-//you will not deploy the dll 
+//you will not deploy the dll when you deploy the project
 //name are generated in the code source
 Console.WriteLine($"Name:{TheAssemblyInfo.GeneratedName}");
 Console.WriteLine($"Nice:{TheAssemblyInfo.GeneratedNameNice}");

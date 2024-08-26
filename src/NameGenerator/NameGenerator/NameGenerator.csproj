@@ -36,7 +36,7 @@
 		<!--<None Include="../../../docs/tb.png" Pack="true" PackagePath="\" />-->
 		<None Include="$(OutputPath)\$(AssemblyName).dll" Pack="true" PackagePath="analyzers/dotnet/cs" Visible="false" />	</ItemGroup>
 	<PropertyGroup>
-		<Version>2024.26.8.1802</Version>
+		<Version>2024.26.8.2002</Version>
 		<Authors>Andrei Ignat</Authors>
 		<Description>Generates uniqe names for release</Description>
 		<Title>NameGenerator</Title>
