@@ -1,0 +1,9 @@
+{
+  "scripts": {
+    "build": "dotnet build --configuration Release",
+    "test": "dotnet test --configuration Release",
+    "ci": "dotnet r build && dotnet r test",
+    "packGenerator": "dotnet pack NameGenerator/NameGenerator.csproj -o PACK --no-build -c Release ",
+    "pack":"dotnet r build && dotnet r packGenerator"
+  }
+}

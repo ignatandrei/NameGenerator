@@ -24,13 +24,17 @@
 	<PropertyGroup>
 		<EnforceExtendedAnalyzerRules>true</EnforceExtendedAnalyzerRules>
 	</PropertyGroup>
-
 	<ItemGroup>
-		<None Include="readme.md" Pack="true" PackagePath="\" />
-		<None Include="../../../docs/tb.png" Pack="true" PackagePath="\" />
-		<None Include="$(OutputPath)\$(AssemblyName).dll" Pack="true" PackagePath="analyzers/dotnet/cs" Visible="false" />
-		<None Include="readme.txt" pack="true" PackagePath="." />
+		<None Include="../../../README.md" Pack="true" PackagePath="\" />
+		<None Include="../../../README.txt">
+			<Pack>True</Pack>
+			<PackagePath></PackagePath>
+		</None>
+
 	</ItemGroup>
+	<ItemGroup>
+		<!--<None Include="../../../docs/tb.png" Pack="true" PackagePath="\" />-->
+		<None Include="$(OutputPath)\$(AssemblyName).dll" Pack="true" PackagePath="analyzers/dotnet/cs" Visible="false" />	</ItemGroup>
 	<PropertyGroup>
 		<Version>2024.26.8.1802</Version>
 		<Authors>Andrei Ignat</Authors>
@@ -39,7 +43,7 @@
 		<PackageId>RSCG_NameGenerator</PackageId>
 		<PackageTags>C#;.NET;Roslyn;RSCG;Roslyn Source Code Generator;</PackageTags>
 		<PackageReadmeFile>readme.md</PackageReadmeFile>
-		<PackageIcon>tb.png</PackageIcon>
+		<!--<PackageIcon>tb.png</PackageIcon>-->
 		<RepositoryUrl>https://github.com/ignatandrei/NameGenerator</RepositoryUrl>
 		<PackageProjectUrl>https://github.com/ignatandrei/NameGenerator</PackageProjectUrl>
 		<RepositoryType>GIT</RepositoryType>
@@ -55,6 +59,7 @@
 	<PropertyGroup Condition="'$(GITHUB_ACTIONS)' == 'true'">
 		<ContinuousIntegrationBuild>true</ContinuousIntegrationBuild>
 	</PropertyGroup>
+	
 	<!--<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
     <TreatWarningsAsErrors>True</TreatWarningsAsErrors>
   </PropertyGroup>
