@@ -61,7 +61,7 @@ internal class Writers
 "Ivo Andric",
 "John Steinbeck",
 "Giorgos Seferis",
-"Jean-Paul Sartre (declined the prize)[2][permanent dead link]",
+"Jean-Paul Sartre",
 "Michail Sholokhov",
 "Shmuel Yosef Agnon",
 "Nelly Sachs",

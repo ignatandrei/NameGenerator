@@ -2,6 +2,8 @@
 //by just putting here
 //you will not deploy the dll when you deploy the project
 //name are generated in the code source
+Console.WriteLine($"Name:{TheAssemblyInfo.DateGeneratedUTC}");
+
 Console.WriteLine($"Name:{TheAssemblyInfo.GeneratedName}");
 Console.WriteLine($"Nice:{TheAssemblyInfo.GeneratedNameNice}");
 Console.WriteLine($"Small:{TheAssemblyInfo.GeneratedNameSmall}");
